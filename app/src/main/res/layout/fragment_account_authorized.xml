@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="30dp"
+
+    tools:context=".fragments.AccountAuthorizedFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:text="Profile"/>
+    <FrameLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_gravity="center_vertical"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/image_109" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="24dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Aksaule Yerkinova" />
+        <TextView
+            android:id="@+id/textView155"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="54dp"
+            android:textSize="16sp"
+            android:text="***5995" />
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/small_rounded"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/account"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="60dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Edit Profile">
+
+    </TextView>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/small_rounded"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/visa"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="60dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Payment">
+
+        </TextView>
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="130dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Log Out" />
+
+
+</LinearLayout>

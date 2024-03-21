@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63B37F"
+    android:orientation="vertical"
+    android:paddingHorizontal="22dp"
+    tools:context=".fragments.FilterFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/clear_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="-20dp"
+        android:text="Clear All"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- custom_chip_layout.xml -->
+    <include layout="@layout/offer_options"
+        android:layout_marginTop="46dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sort By"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/distance"
+                android:elevation="7dp"
+                android:layout_width="175dp"
+                android:layout_height="36dp"
+                android:background="@drawable/small_rounded"
+                android:text="Distance"
+                android:textStyle="bold"
+                android:textColor="@color/green_1" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rating"
+                android:layout_width="175dp"
+                android:elevation="7dp"
+                android:layout_height="36dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:background="@drawable/small_rounded"
+                android:text="Rating"
+                android:textStyle="bold"
+                android:textColor="@color/green_1" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="Distance (km)"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <include
+        layout="@layout/filter_button3"
+        android:elevation="7dp"
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="Filters"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="7dp"
+
+        android:background="@drawable/custom_spinner_back"
+
+        />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:layoutDirection="rtl"
+        android:gravity="center"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_marginBottom="20dp"/>
+    <CheckedTextView
+        android:id="@+id/checkedTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Praying room"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:layoutDirection="rtl"
+        android:gravity="center"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_marginBottom="20dp"/>
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="7dp"
+
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_spinner_back"
+
+        />
+    <Spinner
+        android:id="@+id/spinner3"
+        android:elevation="7dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+
+        android:background="@drawable/custom_spinner_back"
+        />
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="160dp"
+    android:layout_height="44dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/button_shape"
+    android:backgroundTint="@color/green_2"
+    android:textStyle="bold"
+    android:textSize="16sp"
+
+    android:layout_marginBottom="60dp"
+    android:text="Apply"/>
+
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

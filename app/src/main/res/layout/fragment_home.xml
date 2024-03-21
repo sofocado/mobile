@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:text="Explore restaurants"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_marginHorizontal="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/angular_color"
+            android:drawableStart="@drawable/search_drawable"
+            android:drawableEnd="@drawable/map_drawable"
+            android:ems="10"
+            android:tint="@color/white"
+            android:hint="Search..."
+            android:inputType="text" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="20dp"
+            android:text="Recommendations"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-18dp"
+            android:layout_marginHorizontal="18dp"
+            android:background="@drawable/line_3"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="18dp"
+            android:background="@drawable/line_3"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="18dp"
+            android:text="Available Now"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="18dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="-38dp"
+            android:layout_marginBottom="18dp"
+            android:text="View All"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/restaurant_all_recycle"
+            android:layout_width="wrap_content"
+            app:layoutManager="LinearLayoutManager"
+
+            android:layout_marginHorizontal="18dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

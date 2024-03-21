@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- Your included layout content -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="60dp"
+    android:layout_marginHorizontal="20dp"
+    android:elevation="-15dp"
+    android:background="@drawable/inner_shadow"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8 777 777 77 77"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintStart_toEndOf="@+id/icon" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toTopOf="@+id/icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

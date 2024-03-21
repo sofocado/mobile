@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/map"
+
+        android:end="18dp" />
+    <!-- Apply a color filter to change the color -->
+    <bitmap
+        android:tint="@color/white"
+        android:src="@drawable/icons8_map_ios_17_96_1" />
+</layer-list>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:orientation="vertical"
+    tools:context=".fragments.AccountDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:text="Profile"/>
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/image_80" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Full name" />
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/small_rounded"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+
+        android:inputType="textPersonName"
+        android:text="Full name" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:text="Phone number" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/small_rounded"
+        android:paddingStart="20dp"
+        android:inputType="textPersonName"
+        android:text="Phone number" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button10"
+        android:layout_width="134dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        android:text="Edit Profile" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button11"
+        android:layout_width="134dp"
+        android:layout_height="44dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="40dp"
+
+        android:backgroundTint="@color/purple"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Log Out" />
+
+
+</LinearLayout>
