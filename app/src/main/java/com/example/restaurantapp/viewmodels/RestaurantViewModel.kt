@@ -68,7 +68,7 @@ class RestaurantViewModel : ViewModel() {
                     } else {
                         // Handle unsuccessful login response
                         val errorMsg = loginResponse?.resultMsg ?: "Unknown error"
-                        Log.d("RestaurantViewModel", "Login failed: $errorMsg")
+                        Log.d("RestaurantModel", "Login failed: $errorMsg")
                     }
 
                 } else {
